@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Moving Camouflaged Human Benchmark">
+  <meta name="keywords" content="Object Detection, Camouflaged Object Detection, Video Camouflaged Object Detection, Synthetic Data">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MoCH: Moving Camouflaged Human Benchmark</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+ <!--  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div> -->
+  <!-- <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://keunhong.com">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://hypernerf.github.io">
+            HyperNeRF
+          </a>
+          <a class="navbar-item" href="https://nerfies.github.io">
+            Nerfies
+          </a>
+          <a class="navbar-item" href="https://latentfusion.github.io">
+            LatentFusion
+          </a>
+          <a class="navbar-item" href="https://photoshape.github.io">
+            PhotoShape
+          </a>
+        </div>
+      </div>
+    </div> -->
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">MoCH: A Real-World Moving Camouflaged Human Video Benchmark with Synthetic Data Enhancement</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <p>Anonymous for review</p></span>
+          </div>     
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img id="teaser" src="./static/images/teaser_web.png"/>
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">MoCH</span> Could you see through the camouflage human? <b>They are staring at u!</b>
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            In the realm of Video Camouflaged Object Detection (VCOD), the scarcity of data poses a significant challenge, hampering the development and refinement of detection algorithms. 
+          </p>
+          To address this critical issue, we propose a comprehensive approach that encompasses a new dataset, a synthetic data pipeline, and an effective VCOD network. Firstly, we develop a dedicated benchmark for Video Camouflaged Human Detection (VCHD), i.e., <b>MO</b>ving <b>C</b>amouflaged <b>H</b>uman (MoCH), which covers various human-centric camouflaged scenarios.Secondly, we generate a large amount of synthetic data, incorporating multi-view observations to simulate a wide range of scenarios and camouflaged conditions. This could serve as an auxiliary training source to help current VCOD methods improve robustness and versatility.Lastly, our proposed VCOD method termed <b>M</b>ask-<b>M</b>otionNet <b>(MMNet)</b> outperforms state-of-the-art methods by a large margin on multiple benchmarks.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+    <div class = "columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Data Visualization</h2>
+      </div>
+    </div>
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img id="teaser" src="./static/images/data_sample.jpg"/>
+      <h2 class="subtitle has-text-centered">
+        Data Annotation Samples of <b>MoCH</b>.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img id="teaser" src="./static/images/syn_more.jpg"/>
+      <h2 class="subtitle has-text-centered">
+        Samples of Synthetic Data.
+      </h2>
+    </div>
+  </div>
+</section>
+    <div class = "columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Data Distribution</h2>
+      </div>
+    </div>
+    <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img id="teaser" src="./static/images/data_stat.jpg"/>
+      <h2 class="subtitle has-text-centered">
+        Dats Statistics of MoCH.
+      </h2>
+      <p>(a) and (b) reflect the statistics of MoCH and MoCA-Mask, respectively. MoCA-Mask suffers an imbalance in object size over the training and testing set, but our MoCH has balanced object size over the data split.</p>
+    </div>
+  </div>
+</section>
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Experiment Results</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/vsIU77CX4KM"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <h2 class="subtitle has-text-centered">
+        Visualization Results of Reference Methods and Our Proposed MMNet on MoCH.
+        </h2>
+      </div>
+    </div>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/T4R_DefOvQ0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <h2 class="subtitle has-text-centered">
+        Visualization Results of Reference Methods and Our Proposed MMNet on MoCA.
+        </h2>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link" href="https://MoCH.github.io" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
